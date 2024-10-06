@@ -26,7 +26,7 @@ public class Remark {
 
     @Override
     public boolean equals(Object other) {
-        return other == this // short circuit if same object
+        return other == this // short circuit if it is the same object
                 || (other instanceof Remark // instanceof handles nulls
                 && value.equals(((Remark) other).value)); // state check
     }
